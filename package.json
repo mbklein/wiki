@@ -132,6 +132,7 @@
     "passport-microsoft": "0.0.5",
     "passport-oauth2": "1.5.0",
     "passport-okta-oauth": "0.0.1",
+    "passport-openam": "^0.0.3",
     "passport-openidconnect": "0.0.2",
     "passport-saml": "1.1.0",
     "passport-twitch": "1.0.3",

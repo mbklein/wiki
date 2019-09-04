@@ -1,0 +1,25 @@
+key: openam
+title: Northwestern Online Passport
+description: |
+  The Online Passport service is offered by Northwestern Information Technology (IT) 
+  to departments and schools who wish to restrict access to their websites or web-based 
+  applications.
+author: github.com/nulib
+logo: http://nul-repo-deploy.s3.amazonaws.com/academicn.svg
+color: grey darken-3
+website: https://www.it.northwestern.edu/auth-svcs/passport/wam.html
+isAvailable: true
+useForm: false
+props:
+  baseURL:
+    type: String
+    title: OpenAM Base URL
+    hint: OpenAM Base URL
+    default: https://websso.it.northwestern.edu/amserver/
+    order: 1
+  cookieName:
+    type: String
+    title: OpenAM Cookie Name
+    hint: OpenAM Cookie Name
+    default: openAMssoToken
+    order: 2

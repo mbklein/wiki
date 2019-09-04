@@ -18,14 +18,14 @@ services:
     ports:
       - "15432:5432"
 
-  adminer:
-    image: adminer:latest
-    logging:
-      driver: "none"
-    networks:
-      - wikinet
-    ports:
-      - "3001:8080"
+  #adminer:
+  #  image: adminer:latest
+  #  logging:
+  #    driver: "none"
+  #  networks:
+  #    - wikinet
+  #  ports:
+  #    - "3001:8080"
 
   solr:
     image: solr:7-alpine
@@ -42,21 +42,21 @@ services:
       - solr-precreate
       - wiki
 
-  wiki:
-    build:
-      context: .
-      dockerfile: dev/docker-postgres/Dockerfile
-    depends_on:
-      - db
-      - solr
-    networks:
-      - wikinet
-    ports:
-      - "3000:3000"
-    volumes:
-      - .:/wiki
-      - /wiki/node_modules
-    command: ["sh", "./dev/docker-postgres/init.sh"]
+  #wiki:
+  #  build:
+  #    context: .
+  #    dockerfile: dev/docker-postgres/Dockerfile
+  #  depends_on:
+  #    - db
+  #    - solr
+  #  networks:
+  #    - wikinet
+  #  ports:
+  #    - "3000:3000"
+  #  volumes:
+  #    - .:/wiki
+  #    - /wiki/node_modules
+  #  command: ["sh", "./dev/docker-postgres/init.sh"]
 
 networks:
   wikinet:

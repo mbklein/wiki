@@ -10372,6 +10372,11 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+openam@>=0.0.1:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/openam/-/openam-0.0.6.tgz#ad00d726f67494027b57d83198a0d5f47ed5883e"
+  integrity sha1-rQDXJvZ0lAJ7V9gxmKDV9H7ViD4=
+
 opener@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/opener/-/opener-1.5.1.tgz#6d2f0e77f1a0af0032aca716c2c1fbb8e7e8abed"
@@ -10811,6 +10816,15 @@ passport-okta-oauth@0.0.1:
     pkginfo "0.2.x"
     uid2 "0.0.3"
 
+passport-openam@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/passport-openam/-/passport-openam-0.0.3.tgz#0c032680440a7efe26e3af133f3e2b203e7b99ed"
+  integrity sha1-DAMmgEQKfv4m468TPz4rID57me0=
+  dependencies:
+    openam ">=0.0.1"
+    passport ">=0.1.1"
+    pkginfo "0.2.x"
+
 passport-openidconnect@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/passport-openidconnect/-/passport-openidconnect-0.0.2.tgz#e488f8bdb386c9a9fd39c91d5ab8c880156e8153"
@@ -10848,7 +10862,7 @@ passport-twitch@1.0.3:
     passport-oauth2 "^1.1.2"
     pkginfo "0.2.x"
 
-passport@0.4.0:
+passport@0.4.0, passport@>=0.1.1:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/passport/-/passport-0.4.0.tgz#c5095691347bd5ad3b5e180238c3914d16f05811"
   integrity sha1-xQlWkTR71a07XhgCOMORTRbwWBE=
